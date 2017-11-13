@@ -46,4 +46,4 @@
 
 -- Delete multiple entries with a single command:
 --
--- DELETE FROM people WHERE ID = (1, 2, 3, ...)
+-- DELETE FROM people WHERE id = (1, 2, 3, ...)
