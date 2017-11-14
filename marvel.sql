@@ -11,10 +11,12 @@
 -- UPDATE people set name = 'Ian Henderson'
 -- WHERE name = 'Iain Henderson';
 -- SELECT name FROM people WHERE name = 'Ian Henderson'
+-- *preferably do this by id*
 
 -- -- Return ONLY your name from the 'people' table.
 -- SELECT name FROM people
 -- WHERE name = 'Krisztian Der';
+-- *preferably do this by id*
 
 -- -- -- The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
 -- DELETE FROM movies WHERE title = 'Batman Begins';
@@ -44,7 +46,15 @@
 -- -- -- The cinema would also like to make the Guardian movies a back to back feature. Update the 'Guardians of the Galaxy' show time from 18:55 to 21:30
 -- UPDATE movies SET show_time = '21:30'
 -- WHERE title = 'Guardians of the Galaxy' AND show_time = '13:15';
+-- *could just use id for easier identification*
 
 -- Delete multiple entries with a single command:
---
 -- DELETE FROM people WHERE id = (1, 2, 3, ...)
+-- DELETE FROM people WHERE id IN (21, 22, 23)
+-- DELETE  FROM people WHERE id BETWEEN (21, 33)
+-- DELETE FROM movies WHERE title IN ('Ant Man', 'Iron Man 3')
+-- DELETE FROM movies WHERE year < 2014 < 2017
+
+-- SELECT * movies
+-- WHERE title LIKE '%the%'
+--  % is a wildcard
