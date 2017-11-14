@@ -31,6 +31,7 @@
 -- SELECT name FROM people
 
 -- -- -- Somehow the list of people includes two people named 'Andrew'. Change these entries to the proper names ('Jeff 4', 'Jeff 5')
+-- SELECT * FROM people WHERE name = 'Andrew'
 -- UPDATE people SET name = 'Jeff 4' WHERE id = 21;
 -- UPDATE people SET name = 'Jeff 5' WHERE id = 22;
 -- SELECT * FROM people;
